@@ -145,7 +145,7 @@ cerrarCarrito.addEventListener('click', ()=>{
   carritoPanel.classList.remove('active');
 });
 pagarBtn.addEventListener('click', ()=>{
-  alert("Pago simulado. Total: $" + carrito.reduce((a,b)=>a+b.precio,0).toFixed(2));
+  alert("Para pagar debe mandar una captura de su carrito.Total: $" + carrito.reduce((a,b)=>a+b.precio,0).toFixed(2));
 });
 aplicarPromo.addEventListener('click', ()=>{
   const code = promoInput.value.trim().toUpperCase();
@@ -169,3 +169,4 @@ for (let i=0; i<50; i++){
   point.style.animationDelay = (Math.random()*5) + "s";
   background.appendChild(point);
 }
+
