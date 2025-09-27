@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERSI SHOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fondo animado -->
+  <div class="background" id="background"></div>
+
+  <!-- Login -->
+  <div class="login-container" id="loginContainer">
+    <h2>Bienvenido a PERSI SHOP</h2>
+    <input type="text" id="username" placeholder="Ingresa tu usuario">
+    <button id="loginBtn">Entrar</button>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-content" id="mainContent" style="display:none;">
+    <div class="fila" id="inicio">
+      <h1 class="titulo">PERSI SHOP</h1>
+    </div>
+    <div class="fila" id="botonesInicio">
+      <button id="comprarBtn">Comprar</button>
+      <button id="carritoBtn">Carrito</button>
+      <button id="pagarBtn">Pagar</button>
+    </div>
+  </div>
+
+  <!-- Sección Productos -->
+  <div class="productos-container" style="display:none;"></div>
+  <button class="volver" id="volverBtn" style="display:none;">Volver a Inicio</button>
+
+  <!-- Carrito lateral -->
+  <div id="carritoPanel" class="carrito-panel">
+    <div class="carrito-header">
+      <h2>Tu Carrito</h2>
+      <button id="cerrarCarrito">&times;</button>
+    </div>
+    <div class="carrito-items"></div>
+    <div class="carrito-total">
+      Total: $<span id="carritoTotal">0.00</span><br>
+      <input type="text" id="promoInput" placeholder="Código promo">
+      <button id="aplicarPromo">Aplicar</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
